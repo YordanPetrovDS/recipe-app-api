@@ -1,2 +1,2 @@
-# recipe-app-api
+# recipe_app_api
 Recipe API project.
