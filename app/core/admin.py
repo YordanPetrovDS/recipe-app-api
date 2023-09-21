@@ -2,12 +2,12 @@
 Django admin customization.
 """
 from core import models
-from django.contrib.admin import register
+from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin as BaseUserAdmin
 from django.utils.translation import gettext_lazy as _
 
 
-@register(models.User)
+@admin.register(models.User)
 class UserAdmin(BaseUserAdmin):
     """Define the admin pages for users."""
 
@@ -46,3 +46,6 @@ class UserAdmin(BaseUserAdmin):
             },
         ),
     )
+
+
+admin.site.register(models.Recipe)
