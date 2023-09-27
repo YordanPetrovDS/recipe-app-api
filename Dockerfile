@@ -1,4 +1,4 @@
-FROM python:3.9-alpine3.13
+FROM python:3.9-alpine3.17
 LABEL maintainer="dakata_gb"
 
 ENV PYTHONUNBUFFERED 1
